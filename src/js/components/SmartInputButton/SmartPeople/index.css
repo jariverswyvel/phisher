@@ -1,0 +1,43 @@
+@import '../../../../css/vars.css';
+
+.smart-people-item {
+  padding: 1rem 5%;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(65, 119, 192, .1);
+  }
+
+  & .smart-people-wrapper {
+    display: flex;
+
+    & .people-image img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+
+    & .people-image .label-initials {
+      border-radius: 50%;
+      padding: 1.25rem 0;
+      text-align: center;
+      width: 4rem;
+      height: 4rem;
+      background: var(--background);
+
+      &.dark {
+        background: var(--darkLight);
+      }
+    }
+
+    & .people-names p {
+      padding: 0.2rem 0 0 0.5rem;
+    }
+
+    & .people-username {
+      font-style: italic;
+      color: var(--blue);
+      font-size: 90%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../../../css/vars.css';
+
+.smart-label-item-wrapper {
+  display: flex;
+
+  & .label-image img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  & .label-image .label-initials {
+    border-radius: 50%;
+    padding: 1.25rem 0;
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--white);
+
+    &.dark {
+      background: var(--dark);
+    }
+  }
+
+  & .label-text p {
+    padding: 0.2rem 0 0 0.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    //background: rgba(0, 0, 0, 0.3);
+  }
+}

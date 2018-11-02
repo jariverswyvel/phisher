@@ -1,0 +1,129 @@
+@import '../../../css/vars.css';
+
+.smart-input-wrapper {
+  position: relative;
+  display: inline-flex;
+  margin: .5rem 0;
+  /* min-width: 40rem; */
+
+  & .input-title {
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 2rem;
+    letter-spacing: .1rem;
+  }
+
+  & .input-holder {
+    margin-top: 1rem;
+  }
+
+  & .form-input {
+    width: 100%;
+    height: 5rem;
+    border: none;
+    /* color: var(--blue); */
+    font-size: 1.5rem;
+    outline: none;
+    padding-left: 1rem;
+
+    &::placeholder {
+      //color: var(--blue);
+      opacity: .5;
+    }
+  }
+}
+
+.smart-input-pop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  padding: 0;
+  left: 10%;
+  width: 85%;
+  border-radius: .5rem;
+  background-color: var(--white);
+
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+
+  & input {
+    display: flex;
+    align-self: center;
+    width: 95%;
+    height: 4rem;
+    margin: 1rem;
+  }
+
+  & .smart-suggestions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 1rem;
+    justify-content: flex-start;
+    overflow-y: auto;
+    max-height: 30rem;
+
+    &-title {
+      font-weight: bold;
+      margin: .4rem 5%;
+    }
+  }
+}
+
+.smart-input-label {
+  display: flex;
+  justify-content: flex-start;
+  margin: .2rem 0;
+  padding: 1rem;
+
+  & i {
+    margin-right: 1rem;
+    min-width: 2rem;
+  }
+
+  &:hover {
+    color: var(--blue);
+    cursor: pointer;
+  }
+}
+
+.smart-label-wrapper,
+.smart-labels {
+  display: flex;
+  flex-direction: row;
+}
+
+.smart-labels li:not(:first-child) {
+  margin: 0 .5rem;
+}
+
+.smart-labels li:first-child {
+  margin: 0 .5rem 0 -1rem;
+}
+
+.error-input {
+  border: solid .2rem var(--red) !important;
+
+  &-message {
+    position: relative;
+    color: var(--red);
+    top: -2rem;
+  }
+}
+
+.animate-pop {
+  animation: -anim-pop .2s ease-out 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes -anim-pop {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(5rem);
+  }
+}

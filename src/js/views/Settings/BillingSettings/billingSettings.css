@@ -1,0 +1,117 @@
+@import '../../../../css/vars.css';
+
+.credit-card {
+  position: relative;
+  letter-spacing: .2rem;
+  font-weight: 500;
+  width: fit-content;
+  margin-top: 2rem;
+  margin-left: -.7rem;
+
+  &-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    width: 95.4%;
+    height: 92.07%;
+    position: absolute;
+    top: 2.48%;
+    left: 2.2%;
+    border-radius: 1.6rem;
+    transition: opacity .2s;
+  }
+
+  &:hover &-overlay {
+    opacity: 1;
+  }
+
+  &-number {
+    position: absolute;
+    top: 56.3%;
+    left: 13%;
+
+    & span:not(:first-of-type) {
+      margin-left: 2.85rem;
+    }
+  }
+
+  &-expiry {
+    position: absolute;
+    top: 79.8%;
+    left: 12.1%;
+    font-size: .9rem;
+
+    &-year {
+      margin-left: 1.3rem;
+    }
+  }
+
+  &-name {
+    position: absolute;
+    top: 79.8%;
+    left: 41%;
+    font-size: .9rem;
+  }
+
+  &-edit {
+    display: flex;
+    font-size: 2rem;
+
+    & i  {
+      margin-left: -3rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &-edit-input {
+    margin-top: 2rem;
+  }
+}
+
+.delete-card-container {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.credits-settings-container {
+  margin-top: 2rem;
+}
+
+.credits-settings {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.credit-buy-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .credit-buy-total-price {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+.available-credits {
+  font-size: 3rem;
+
+  & i {
+    color: gold;
+    margin-right: 2rem;
+  }
+}
+
+.pack-list {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.payment-history {
+  margin-top: 2rem;
+}

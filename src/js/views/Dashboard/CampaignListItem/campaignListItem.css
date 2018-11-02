@@ -1,0 +1,141 @@
+@import '../../../../css/vars.css';
+
+.campaign-list-item {
+  width: 100%;
+  padding: .5rem 1rem;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: var(--white);
+  color: #565656;
+  box-shadow: 0rem .1rem .2rem rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
+
+  & .button-action {
+    font-size: 1.3rem;
+  }
+
+  &-name {
+    font-size: 1.75rem;
+    display: flex;
+    line-height: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 22rem;
+    color: #464646;
+
+    & > p {
+      padding: 1rem 0;
+    }
+  }
+
+  &-module {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > i {
+      font-size: 1.75rem;
+      margin: 0 1rem;
+    }
+  }
+
+  &-stats {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    & > p {
+      margin: .25rem 0;
+    }
+
+    & > p:first-child {
+      padding-top: .5rem;
+    }
+
+    & > p:nth-child(2) {
+      padding-bottom: .5rem;
+    }
+
+    & span {
+      font-weight: 300;
+      font-size: 1.25rem;
+    }
+  }
+
+  &-repeat {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    & > p {
+      margin: .25rem 0;
+    }
+
+    & > p:first-child {
+      padding-top: .5rem;
+    }
+
+    & > p:nth-child(2) {
+      padding-bottom: .5rem;
+    }
+  }
+
+  &-run {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    font-size: 1.25rem;
+
+    & > .button-run {
+      border: 1px solid var(--green);
+      padding: 1rem;
+      border-radius: 1rem;
+
+      &:hover {
+        color: white;
+        background: var(--green);
+      }
+    }
+
+    & > .button-started {
+      border: 1px solid var(--blue);
+      padding: 1rem;
+      border-radius: 1rem;
+      color: var(--blue);
+
+      &:hover {
+        background: var(--white);
+        color: var(--blue);
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.campaign-list-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.campaign-list-item-detail {
+  z-index: 0;
+  background: white;
+  margin: 0;
+  height: 20rem;
+  width: 99%;
+  display: flex;
+  align-self: center;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  padding: 1rem;
+}

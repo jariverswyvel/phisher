@@ -1,0 +1,79 @@
+@import '../../../css/vars.css';
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem 6rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+}
+
+.aside-menu {
+  width: 25rem;
+  background-color: var(--white);
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  transition: transform .2s ease-out;
+  box-shadow: -.1rem 0 .3rem rgba(0, 0, 0, .2);
+  transform: translateX(0);
+
+  &-nav {
+    height: calc(100% - 7rem);
+    margin-top: 2rem;
+  }
+
+  &.slide-right {
+    transform: translateX(103%);
+  }
+}
+
+.aside-header {
+  font-size: 2rem;
+  display: inline-flex;
+  padding: 1rem;
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & > li {
+    margin-top: auto;
+  }
+
+  & a:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  &-item {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+
+    &:hover {
+      background-color: var(--blue);
+      color: white;
+    }
+  }
+
+  & .fa-coins {
+    color: gold;
+  }
+}
+
+.aside-arrow {
+  font-size: 3rem;
+  position: absolute;
+  top: calc(50% - 2rem);
+  left: -3.5rem;
+  padding: .5rem;
+}

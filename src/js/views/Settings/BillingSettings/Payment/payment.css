@@ -1,0 +1,17 @@
+@import '../../../../../css/vars.css';
+
+.payment {
+  background-color: white;
+  box-shadow: var(--boxshadow);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+
+  &-date {
+    font-weight: bold;
+  }
+}

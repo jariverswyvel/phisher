@@ -1,0 +1,180 @@
+@import 'reset';
+@import 'vars';
+
+.html-animation {
+  animation: html_rotate .8s ease-out 1;
+}
+
+@keyframes html_rotate {
+  from {
+    transform: rotate3d(0, 0, 1, 0);
+  }
+  to {
+    transform: rotate3d(.5, .5, .5, 360deg);
+  }
+}
+
+html,
+body,
+main,
+.react-mount {
+  min-height: 100vh;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto Oxygen-Sans, Ubuntu, Cantarell, “Fira Sans”, “Droid Sans”,
+    Helvetica Neue, Helvetica, Hiragino Kaku Gothic Pro, Meiryo, Arial, sans-serif;
+  overflow-x: hidden;
+
+  /* background: var(--background); */
+  background: linear-gradient(to bottom, var(--background) 0%, #dedee0 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto Oxygen-Sans, Ubuntu, Cantarell, “Fira Sans”, “Droid Sans”,
+    Helvetica Neue, Helvetica, Hiragino Kaku Gothic Pro, Meiryo, Arial, sans-serif;
+  appearance: none;
+}
+
+[type='checkbox'] {
+  appearance: checkbox;
+}
+
+textarea {
+  resize: none;
+}
+
+.fa-toggle-on {
+  color: var(--green);
+}
+
+/* DARK THEME */
+
+.dark-theme {
+  background-color: var(--dark) !important;
+  color: white !important;
+}
+
+.dark-theme-light-bg {
+  background-color: var(--darkLight) !important;
+  color: white !important;
+}
+
+.dark-theme-login {
+  background: url(/assets/svg/login-bg-dark.svg) no-repeat center center !important;
+  background-size: contain !important;
+}
+
+.dark-theme-register {
+  background: url(/assets/svg/register-bg-dark.svg) no-repeat center center !important;
+  background-size: contain !important;
+}
+
+.dark-theme-select {
+  background: var(--darkLight) url(/assets/svg/angle-down-white.svg) no-repeat calc(100% - 1.5rem) 50% !important;
+  background-size: 1.5rem;
+  color: white !important;
+}
+
+.dark-modal {
+  background: var(--darkLight);
+}
+
+/* END DARK THEME */
+
+.fit-content {
+  width: fit-content;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hide-file-input {
+  width: .1rem;
+  height: .1rem;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/* TEXT OPTIONS */
+
+.unselectable {
+  user-select: none;
+}
+
+/* END TEXT OPTIONS */
+
+@keyframes slide_up_list {
+  from {
+    transform: translateY(6rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

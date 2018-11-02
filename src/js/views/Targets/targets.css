@@ -1,0 +1,17 @@
+.targets-container {
+  padding: 7rem 6rem;
+}
+
+.targets-header {
+  margin-bottom: 2rem;
+}
+
+.target-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.target-modal {
+  width: 40rem;
+}

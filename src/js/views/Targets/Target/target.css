@@ -1,0 +1,42 @@
+@import '../../../../css/vars.css';
+
+.target {
+  background-color: white;
+  box-shadow: var(--boxshadow);
+  border-radius: .5rem;
+  margin: .5rem 1rem;
+  padding: .5rem .5rem;
+  font-size: 1.3rem;
+  min-width: 46rem;
+  max-width: 46rem;
+
+  &-info {
+    width: calc(100% - 8rem);
+    margin: 0 .5rem;
+
+    /* & p {
+      margin: 0 1rem;
+    } */
+  }
+
+  &-name {
+    font-weight: 700;
+    letter-spacing: .1rem;
+  }
+
+  &-email  {
+    color: var(--blue);
+    font-style: italic;
+    margin-top: .5rem;
+  }
+
+  &-actions {
+    margin-left: 1rem;
+  }
+
+  & .button-action {
+    font-size: 1.2rem;
+    padding: .7rem;
+    margin: 0 .5rem;
+  }
+}

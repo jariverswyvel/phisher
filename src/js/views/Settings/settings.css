@@ -1,0 +1,71 @@
+@import '../../../css/vars.css';
+
+.settings-container {
+  padding: 7rem 6rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.active-settings-container {
+  padding: 1rem 2rem;
+  width: 80rem;
+  background-color: white;
+  box-shadow: var(--boxshadow);
+  border-radius: .5rem;
+  height: fit-content;
+  margin-left: 2rem;
+}
+
+.settings-nav {
+  border-right: solid .2rem lightgrey;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  .settings-nav-items {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 7rem;
+  }
+}
+
+.settings-list-item {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  width: 15rem;
+  border-left: .3rem solid var(--blue);
+  transition: border-width .2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & i {
+    color: var(--red);
+  }
+
+  &:hover {
+    background-color: rgba(65, 119, 192, .1);
+  }
+
+  &-active {
+    color: var(--blue);
+    font-weight: bold;
+    border-left-width: .7rem;
+    background-color: rgba(65, 119, 192, .1);
+  }
+}
+
+.active-settings-title {
+  font-size: 2rem;
+  padding: 1rem 0;
+  border-bottom: solid .2rem lightgrey;
+  letter-spacing: .2rem;
+}
+
+.settings-section {
+  margin: 2rem 0;
+}

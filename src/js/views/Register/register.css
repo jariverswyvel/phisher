@@ -1,0 +1,33 @@
+@import '../../../css/vars.css';
+
+.register {
+  width: 100rem;
+  height: 70rem;
+  background: url(/assets/svg/register-bg.svg) no-repeat center center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-logo {
+    margin-top: 4.5rem;
+
+    & i {
+      font-size: 7rem;
+      color: var(--blue);
+    }
+  }
+
+  &-inputs {
+    margin-top: 4rem;
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-button {
+    margin-top: 2rem;
+  }
+}

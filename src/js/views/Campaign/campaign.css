@@ -1,0 +1,55 @@
+@import '../../../css/vars.css';
+
+.campaign-container {
+  padding: 7rem 6rem;
+}
+
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &-title-module {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-module {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 4rem;
+    margin: 0 3rem;
+
+    & > i {
+      font-size: 2.75rem;
+      margin-right: 1rem;
+    }
+  }
+
+  & > .campaign-actions {
+    display: flex;
+    justify-content: space-between;
+    min-width: 17rem;
+    max-width: 25rem;
+
+    & > .button-run {
+      margin-left: 2rem;
+    }
+  }
+}
+
+.target-smart-picker {
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+@media (max-width: 1170px) {
+  .section-list-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}

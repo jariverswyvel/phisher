@@ -1,0 +1,32 @@
+.modal-wrapper {
+  position: fixed;
+  background: rgba(0, 0, 0, .1);
+  width: 100vw;
+  height: 100vh;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+}
+
+.modal-content {
+  background: var(--white);
+  box-shadow: 0 0 .3rem rgba(0, 0, 0, .3);
+  min-height: 15rem;
+  border-radius: .5rem;
+  margin-top: -10rem;
+  min-width: 30rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  font-weight: 500;
+}

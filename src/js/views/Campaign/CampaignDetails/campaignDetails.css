@@ -1,0 +1,233 @@
+@import '../../../../css/vars.css';
+
+.campaign-detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & .campaign-name {
+    display: flex;
+
+    & span {
+      display: flex !important;
+      color: white;
+    }
+  }
+}
+
+.campaign-info {
+  background: var(--background);
+  border-radius: .5rem;
+  width: 40%;
+
+  &.dark {
+    & > *:not(h2) {
+      color: black;
+    }
+
+    background: var(--darkLight);
+  }
+
+  & h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+  }
+}
+
+.run-list {
+  animation: slide_up_list .4s 1;
+}
+
+.campaign-detail-wrapper {
+  background: var(--white);
+  min-height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 4rem;
+  color: #565656;
+  box-shadow: 0rem .1rem .2rem rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
+}
+
+.campaign-detail-runs {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  margin-top: 4rem;
+  min-height: 30rem;
+
+  & .section-list-header {
+    margin-bottom: 2rem;
+  }
+
+  & .no-runs-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 25rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #777;
+    position: relative;
+
+    &.dark {
+      color: white;
+    }
+
+    & .no-runs-image {
+      width: 15rem;
+      position: absolute;
+      left: 2rem;
+      top: -3.7rem;
+    }
+  }
+}
+
+.campaign-target-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+  justify-content: space-between;
+
+  & .campaign-targets {
+    display: flex;
+    align-items: flex-start;
+    max-height: 28rem;
+    min-height: 28rem;
+
+    &-search {
+      display: flex;
+      min-height: 4rem;
+      align-items: center;
+      background: var(--white);
+
+      & > i {
+        padding: .5rem .2rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+      }
+
+      & > input {
+        width: 100%;
+        border: none;
+        padding: .2rem 0;
+        font-size: 1.5rem;
+        background: var(--white);
+      }
+    }
+
+    &-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      padding: 1rem 0;
+    }
+
+    &-list {
+      background: var(--background);
+      overflow-y: auto;
+      overflow-x: hidden;
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+    }
+
+    &-detail {
+      margin-left: 1rem;
+      border-left: 1px solid lightgrey;
+      max-width: 30rem;
+
+      padding: 0 1rem;
+
+      & .form-input {
+        border-radius: .5rem;
+        font-size: 1.2rem;
+        height: 3rem;
+        padding: 1rem;
+      }
+
+      & .input-holder {
+        margin: .5rem 0;
+      }
+
+      & .input-title {
+        font-size: 1rem;
+      }
+
+      & .phisher-button {
+        margin-top: .5rem;
+        padding: .5rem 1.75rem;
+      }
+    }
+  }
+}
+
+/* .target-list {
+  max-height: 24rem;
+  overflow-y: scroll;
+}
+
+.target-list-item {
+  padding: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.3rem;
+
+  &-selected {
+    background: var(--blue);
+    color: var(--white);
+
+    &:first-child {
+      border-top-left-radius: .5rem;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: .5rem;
+    }
+  }
+
+  &:hover {
+    background: var(--blue);
+    cursor: pointer;
+    color: var(--white);
+  }
+
+  &:first-child {
+    border-top-left-radius: .5rem;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: .5rem;
+  }
+
+  & .target-list-email {
+    font-style: italic;
+    font-size: 1rem;
+  }
+} */
+
+.campaign-stats {
+  padding: 0;
+  min-width: 40%;
+  width: 55%;
+  background: var(--background);
+  border-radius: .5rem;
+
+  &.dark {
+    background: var(--darkLight);
+    & .recharts-tooltip-label {
+      color: black;
+    }
+  }
+
+  .campaign-no-stats {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}

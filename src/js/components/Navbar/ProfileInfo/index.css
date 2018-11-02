@@ -1,0 +1,107 @@
+@import '../../../../css/vars.css';
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+
+  & > a {
+    display: flex;
+    align-items: center;
+  }
+
+  & h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  & i {
+    font-size: 3rem;
+    margin-right: 1rem;
+    color: var(--blue);
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: var(--blue);
+  }
+}
+
+.banner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  font-size: 1.5rem;
+  min-width: 11rem;
+  font-weight: 700;
+}
+
+.credits-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: 3.5rem;
+
+  & > i {
+    color: gold;
+    font-size: 1.75rem;
+    margin-right: .5rem;
+  }
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: 7rem;
+  margin-left: 1rem;
+
+  &:hover .profile-name,
+  &:hover .profile-options {
+    color: var(--blue);
+  }
+
+  & i {
+    font-size: 1.75rem;
+    margin-left: .5rem;
+  }
+}
+
+.menu-icon {
+  font-size: 2rem;
+  margin-left: 2rem !important;
+  padding: .5rem;
+}
+
+.credits-amount {
+  font-weight: 400;
+  color: #565656;
+}
+
+.banner-menu {
+  position: absolute;
+  background-color: white;
+  border-radius: .5rem;
+  top: 4rem;
+  padding: .5rem 0;
+  right: -1rem;
+  box-shadow: var(--boxshadow);
+
+  &-list-item {
+    padding: 1rem 2rem;
+    width: 17rem;
+
+    & i {
+      font-size: 1.7rem;
+    }
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
+
+.banner-triangle {
+  color: white;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -1.35rem;
+  right: .8rem;
+  text-shadow: 0rem -.1rem .2rem rgba(0, 0, 0, .1);
+}

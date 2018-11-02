@@ -1,0 +1,146 @@
+@import '../../../../../css/vars.css';
+
+.run-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: .5rem 1rem;
+  margin: .5rem 0;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: var(--white);
+  color: #565656;
+  box-shadow: 0rem .1rem .2rem rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
+
+  &-module {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > i {
+      font-size: 1.75rem;
+      margin: 0 1rem;
+    }
+  }
+
+  &-stats {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    & span {
+      font-weight: 300;
+      font-size: 1.25rem;
+    }
+  }
+
+  &-repeat {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    & > p {
+      margin: .25rem 0;
+    }
+
+    & > p:first-child {
+      padding-top: .5rem;
+    }
+
+    & > p:nth-child(2) {
+      padding-bottom: .5rem;
+    }
+  }
+
+  &-date {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    min-width: 16rem;
+  }
+
+  &-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 9.5rem !important;
+
+    & .button-action {
+      font-size: 1.2rem;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.run-list-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.run-list-item-details {
+  z-index: 0;
+  /* background: white; */
+  margin: -.5rem 0 0 0;
+  min-height: 20rem;
+  width: 99%;
+  display: flex;
+  align-self: center;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+
+  justify-content: space-between;
+  padding: 1rem 4rem;
+
+  font-size: 1.1rem;
+  font-weight: 400;
+
+  & > div {
+    //padding: .5rem .5rem;
+    text-align: center;
+    min-width: calc(70% / 5);
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+
+  & > div:last-child {
+    min-width: 9.5rem !important;
+  }
+
+  & .run-details-target-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    & li {
+      background: var(--white);
+      border-radius: .5rem;
+      margin: .5rem 0;
+      padding: .5rem;
+      font-size: 700;
+
+      & > p {
+        margin: .2rem 0;
+      }
+
+      & > p:first-child {
+        letter-spacing: .1em;
+      }
+
+      & > p:last-child {
+        color: var(--blue);
+        font-style: italic;
+        font-size: normal;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

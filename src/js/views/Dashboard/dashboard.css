@@ -1,0 +1,17 @@
+@import '../../../css/vars.css';
+@import '../../../css/modal.css';
+
+.dashboard-container {
+  padding: 7rem 6rem;
+}
+
+.campaign-list {
+  animation: slide_up_list .4s 1;
+}
+
+.campaign-list-items-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,50 @@
+@import '../../../css/vars.css';
+
+.section-list-header {
+  display: flex;
+  /* margin-bottom: 2rem; */
+  align-items: center;
+  position: relative;
+  padding: 0 3rem 0 0;
+
+  &:hover .edit-icon {
+    display: block;
+  }
+
+  & > h2 {
+    font-size: 4rem;
+  }
+
+  & .header-icon {
+    color: var(--blue);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+  }
+
+  & .input-holder {
+    margin: .5rem 1rem;
+  }
+
+  & .edit-icon {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    display: none;
+    color: black;
+    &.editable {
+      display: block;
+    }
+
+    &.dark-icon {
+      color: var(--white);
+    }
+
+    font-size: 1.75rem;
+    margin: -2rem 0 0 1.5rem;
+
+    cursor: pointer;
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
