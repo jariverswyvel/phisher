@@ -1,34 +1,34 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
-        "targets": {
-          "browsers": [ "last 2 versions", "ie >= 10" ]
-        },
         "modules": false,
         "loose": true
       }
     ],
-
-    "react",
-    "es2015"
+    "@babel/react",
+    "@babel/typescript"
   ],
-
   "plugins": [
-    "transform-decorators-legacy",
-    "transform-class-properties",
-    "transform-object-rest-spread",
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "decoratorsBeforeExport": true
+      }
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-dynamic-import",
+    "@babel/plugin-transform-modules-commonjs",
     "react-hot-loader/babel"
   ],
-
   "env": {
     "development": {
-      "plugins": [ "transform-react-jsx-source", "transform-react-stateless-component-name" ]
+      "plugins": ["@babel/plugin-transform-react-jsx-source", "transform-react-stateless-component-name"]
     },
-
     "production": {
-      "plugins": [ "lodash", "transform-react-remove-prop-types" ]
+      "plugins": ["transform-react-remove-prop-types"]
     }
   }
 }
