@@ -37,7 +37,7 @@
         "html-loader": "^0.5.5",
         "image-webpack-loader": "^6.0.0",
         "local-web-server": "^3.0.7",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.21",
         "mini-css-extract-plugin": "^0.8.0",
         "postcss-css-variables": "^0.13.0",
         "postcss-cssnext": "^3.1.0",
